@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* ============= */
+/* Basic Setup */
+/* ============= */
+h1,h2,h3,h4,h5,h6{margin-bottom: 15px;}
+p{margin-bottom: 15px;}
+a{text-decoration: none; transition: .3s;}
+ul{list-style: none;}
+.container{width: 100%;max-width: 1170px;margin: 0 auto;}
+.row{margin: 0 -15px;}
+.fix{overflow: hidden;}
+.col-2{width: 16.66%;float: left;padding:0 15px;}
+.col-3{width: 25%;float: left;padding:0 15px;}
+.col-4{width: 33.33%;float: left;padding:0 15px;}
+.col-6{width: 50%;float: left;padding:0 15px;}
+.col-12{width: 100%;float: left;padding:0 15px;}
+
+/* Header Section Start */
+.header_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    padding-top: 50px;
+}
+.logo {
+	margin-top: 5px;
+}
+.menu nav ul li {
+	float: left;
+	margin-right: 16px;
+	position: relative;
+}
+.menu nav ul li:last-child{
+    margin-right: 0;
+}
+.menu nav ul li a {
+	padding: 20px 0;
+	display: block;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.menu nav ul li:hover a{
+    color: #F29931;
+}
+/* Sub Menu Style*/
+.menu nav ul li ul.submenu{
+    background: #fff none repeat scroll 0 0;
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.menu nav ul li:hover ul.submenu{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.menu nav ul li ul.submenu li{
+    float: none;
+    margin-right: 0;
+}
+.menu nav ul li ul.submenu li a {
+	color: #666;
+	padding: 10px 15px;
+}
+.menu nav ul li ul.submenu li:hover > a{
+    background: #F29931;
+    color: #fff;
+}
+/* Three Level Menu Style */
+.menu nav ul li ul.submenu li ul.submenu {
+	top: 0;
+	left: 101%;
+	opacity: 0;
+	visibility: hidden;
+    transition: .3s;
+}
+.menu nav ul li ul.submenu li:hover > ul.submenu{
+    opacity: 1;
+    visibility: visible;
+}
+/* Header Right */
+.header_btn {
+	float: right;
+}
+.header_btn a {
+	color: #444;
+	padding: 20px 50px;
+	background: #fff;
+	border-radius: 35px;
+	display: inline-block;
+    font-weight: 700;
+}
+.lang {
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+.lang ul li a {
+	color: #fff;
+	font-weight: 700;
+}
+/* Header Section End */
+
+/* ===================== */
+/* Slider Area Start */
+/* ===================== */
+.single_slider {
+	min-height: 810px;
+    text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.slider_inner{
+    padding-top: 260px;
+}
+.slider_inner h1 {
+	font-size: 60px;
+	color: #fff;
+}
+.slider_inner a {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 40px;
+	background: linear-gradient(#dd4026,#f4a332);
+	display: inline-block;
+	border-radius: 30px;
+	margin-top: 40px;
+}
+/* Slider Area Start */
+
+/* ===================== */
+/* Service Area Start */
+/* ===================== */
+.service_area {
+	margin-top: -130px;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+.single-service {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, .2);
+	padding: 50px 40px;
+    transition: .3s;
+    margin-bottom: 40px;
+}
+.single-service:hover{background: #F29931;}
+.single-service:hover h2{color: #fff;}
+.single-service:hover p{color: #fff;}
+.single-service:hover a{color: #fff;}
+.single-service:hover a.btn{color: #282828; background: #fff;}
+.single-service h2 {
+	font-size: 30px;
+	color: #282828;
+}
+.single-service p {
+	font-size: 14px;
+	line-height: 1.5;
+    color: #7d7d7d;
+}
+.single-service a.btn {
+	font-weight: 700;
+	background: #f3a032;
+	padding: 16px 28px;
+	display: inline-block;
+	border-radius: 30px;
+	margin-top: 25px;
+    color: #3f3f3f;
+}
+.single-service a {
+	margin-right: 20px;
+	color: #282828;
+	font-weight: 700;
+}
+/* Service Area End */
+
+/* ======================== */
+/* Why Chose Us Area Start */
+/* ======================== */
+.why-chose-us {
+	padding-bottom: 100px;
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.section-title h2 {
+	font-size: 48px;
+	color: #282828;
+}
+.chose-wrapper img {
+    margin-bottom: 40px;
+  }
+  .chose-wrapper > p {
+    line-height: 36px;
+    color: #767676;
+  }
+/* Why Chose Us Area End */
+
+/* ======================== */
+/* How We Working Area Start */
+/* ======================== */
+.how-we-work{
+	background: #f6f6f6;
+	padding: 100px 0;
+}
+.single-work{
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
+}
+.single-work h2{
+	height: 170px;
+	font-size: 36px;
+	background: #fff;
+	text-align: center;
+	line-height: 170px;
+	transition: .5s;
+}
+.single-work h2:hover{
+	background: #f3a032;
+	color: #fff;
+}
+.how-we-work .section-title > p {
+	color: #767676;
+}
+/* How We Working Area End */
+
+/* ======================== */
+/* Advertisers Area Start */
+/* ======================== */
+.advertisers-area {
+	padding: 100px 0;
+}
+.advertisers-text {
+	padding-top: 270px;
+}
+.advertisers-text h2 {
+	font-size: 48px;
+	color: #282828;
+}
+.advertisers-text p {
+	font-size: 18px;
+	line-height: 36px;
+	color: #767676;
+}
+.advertisers-text a {
+	display: inline-block;
+	color: #f3a032;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.download-btn > a {
+	margin-top: 40px;
+	padding-right: 24px;
+}
+.download-btn > a:last-child{
+	padding-right: 0;
+}
+.iphone-mobile {
+	text-align: right;
+}
+/* Advertiser Slider */
+.advertiser-active .owl-nav button {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	opacity: 0;
+}
+.advertiser-active .owl-nav > .owl-next {
+	position: absolute;
+	right: 0;
+	left: auto;
+}
+.advertiser-active:hover .owl-nav button {opacity: 1;}
+/* Advertisers Area End */
+
+/* ======================== */
+/* Agencies Area Start */
+/* ======================== */
+.agencies-area {
+	padding: 150px 0;
+	background: #f6f6f6;
+}
+.agencies-txt{text-align: left;}
+.agencies-txt p {
+	line-height: 30px;
+	color: #767676;
+}
+.agencie-list ul li {
+	color: #767676;
+	font-size: 18px;
+	line-height: 36px;
+	margin-bottom: 35px;
+}
+.agencie-list ul li i{
+	margin-right: 10px;
+	font-size: 18px;
+	color: #f3a032;
+}
+/* Agencies Area End */
+
+/* ======================== */
+/* Publisher Area Start */
+/* ======================== */
+.publisher-area{
+	background-image: url(../img/bg/publisher-area.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+}
+.publisher-area .section-title h2{
+	color: #fff;
+}
+.publish {
+	text-align: center;
+}
+.publish img {
+	margin-top: 30px;
+}
+.publisher-area .section-title p {
+	color: #767676;
+	line-height: 36px;
+}
+/* Publish Area Start */
+
+
+/* ======================== */
+/* Fact About Us Area Start */
+/* ======================== */
+.fact-about-us {
+	padding: 100px 0;
+}
+.fact-about-us .section-title p {
+	line-height: 33px;
+	color: #767676;
+}
+.single-fact > h4 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #282828;
+	margin-top: 30px;
+}
+.single-fact {
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 2px solid transparent;
+}
+.single-fact:hover{
+	border-bottom: 2px solid #F29931;
+}
+/* Fact About Us Area Start */
+
+/* ======================== */
+/* Contact Map Area Start */
+/* ======================== */
+#contact-map{min-height: 700px;}
+.contact-map-area {
+	position: relative;
+  }
+.contact-info {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 950px;
+	background: #fff;
+	text-align: center;
+	padding: 100px 0;
+	margin: auto;
+	right: 0;
+	transform: translateY(-50%);
+  }
+.contact-info span{color: #b0b0b0;}
+.contact-info h2 {
+	margin: 10px 0 34px 0;
+	font-size: 36px;
+	color: #282828;
+}
+/* Contact Map Area Start */
+
+/* ======================== */
+/* Footer Area Start */
+/* ======================== */
+.copyright {
+	padding: 60px 0;
+	text-align: center;
+}
+.copyright > p {
+	font-size: 18px;
+	color: #767676;
+	line-height: 1.5;
+}
+.copyright a > i {
+	margin-right: 30px;
+	font-size: 20px;
+	margin-top: 35px;
+	color: #767676;
+	transition: .3s;
+}
+.copyright a:hover > i{
+	color: #f3a032;
+}
+/* Footer Area End */
